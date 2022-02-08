@@ -376,6 +376,26 @@
                         </li>
                     </ul>
             </div>
+            <div class="footer-form-container">
+                <!-- <p class="footer-form-text">Подпишитесь на рассылку</p> -->
+                <form class="footer-form">
+
+                    <div class="footer-form-line">
+                        <label for="mail-footer" class="footer-label">Подпишитесь на рассылку</label>
+                        <input type="email" id="mail-footer" class="footer-input" placeholder="E-mail" name="user-mail" required>
+                    </div>
+
+                    <button type="submit" class="btn-footer-submit"> 
+                    <div class="btn-footer-content">
+                        Подписаться
+                        <svg class="btn-footer-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </div>
+                    </button>
+                </form>
+
+            </div>
         </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -385,6 +405,30 @@
                     <use href="images/icons.svg#icoicon-closse" class="icon-close"></use>
                 </svg>
             </button>
+
+            <form class="modal-form">
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+                <label for="name" class="modal-label">Имя</label>
+                <input type="text" id="name" class="modal-input" name="user-name" required>
+
+                <label for="tel" class="modal-label">Телефон</label>
+                <input type="tel" id="tel" class="modal-input" name="user-tel" required>
+
+                <label for="mail" class="modal-label">Почта</label>
+                <input type="email" id="mail" class="modal-input" name="user-mail" required>
+
+                <label for="coments" class="modal-label" >Коментарии</label>
+                <textarea name="coments" id="coments" class="modal-coments" placeholder="Введите текст"></textarea>
+
+                <div class="terms-cont">
+                    <input type="checkbox" class="modal-input-terms" name="user-terms" value="agree" required> 
+                    <label for="terms-us" class="modal-label-terms">Соглашаюсь с рассылкой и принимаю <a href="" class="terms-user-link">Условия договора</a></label>
+                </div>
+
+                <button type="submit" class="btn-submit-modal">Отправить</button>
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
