@@ -51,15 +51,16 @@
     <section class="portfolio">
         <div class="container">
         <h1 class="portfolio-title title fulse-title">Портфолио</h1>
-        <ul class="filtr-btn-list list">
-            <li class="filtr-btn-item item"><button type="button" class="btn-filtr">Все</button></li>
-            <li class="filtr-btn-item item"><button type="button" class="btn-filtr">Веб-сайты</button></li>
-            <li class="filtr-btn-item item"><button type="button" class="btn-filtr">Приложения</button></li>
-            <li class="filtr-btn-item item"><button type="button" class="btn-filtr">Дизайн</button></li>
-            <li class="filtr-btn-item item"><button type="button" class="btn-filtr">Маркетинг</button></li>
+        <ul class="filtr-btn-list filter list">
+            <li class="filtr-btn-item item"><button type="button" data-filter="web-site" class="btn-filtr button-type-web-site">Веб-сайты</button></li>
+            <li class="filtr-btn-item item"><button type="button" data-filter="all" class="btn-filtr button-type-all">Все</button></li>
+            <li class="filtr-btn-item item"><button type="button" data-filter="apps" class="btn-filtr button-type-apps">Приложения</button></li>
+            <li class="filtr-btn-item item"><button type="button" data-filter="dizain" class="btn-filtr button-type-disain">Дизайн</button></li>
+            <li class="filtr-btn-item item"><button type="button" data-filter="marc" class="btn-filtr button-type-marc">Маркетинг</button></li>
         </ul>
+
         <ul class="gallery-list list">
-            <li class="gallery-item item">
+            <li class="gallery-item web-site">
                 <a href="" class="galery-link link">
                 <div class="galery-tumb">
                     <div class="galery-overlay">
@@ -74,7 +75,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item dizain">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -88,7 +89,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item apps">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -102,7 +103,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item marc">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -116,7 +117,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item apps">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -130,7 +131,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item web-site">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -144,7 +145,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item dizain">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -158,7 +159,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item marc">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -172,7 +173,7 @@
                     </div>
                 </a>
             </li>
-            <li class="gallery-item item">
+            <li class="gallery-item apps">
                 <a href="" class="galery-link link">
                     <div class="galery-tumb">
                         <div class="galery-overlay">
@@ -188,6 +189,8 @@
                 
             </li>
         </ul>
+<!-- ------------------------------------------------------------------------- -->
+
         </div>
     </section>
 </main>
@@ -262,6 +265,7 @@
         </div>
     </footer>
 
+    <script src="./js/filtr.js"></script>
 </body>
 
 </html>
