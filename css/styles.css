@@ -1042,6 +1042,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
+    margin-left: 0.3em;
 
     color: #2196f3;
 }
@@ -1115,8 +1116,8 @@ img {
     outline: transparent;
 }
 
-/* .modal-input-terms:focus + .modal-icon-checbox {
-    outline: #000000 solid 2px;
-} */
+.modal-input-terms:focus + .modal-icon-checbox {
+    outline: var(--brand-color) solid 1px;
+}
 
 /* ----------------------------------------------- */
